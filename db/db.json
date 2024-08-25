@@ -1,0 +1,18 @@
+{
+  "Patients": [
+    {
+      "id": "1",
+      "name": "Rahul",
+      "city": "Bhopal",
+      "age": 24,
+      "adhar": 123456789
+    },
+    {
+      "id": "c9cf",
+      "name": "Himanshee",
+      "city": "Betul",
+      "age": "21",
+      "adhar": "988465426888"
+    }
+  ]
+}
