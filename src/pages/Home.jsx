@@ -9,13 +9,22 @@ import img5 from "../../public/doctor4.jpg";
 import Card from 'react-bootstrap/Card';
 
 import { Navigate, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios';
 
 const Home=()=>{
 
+  const [cart,setCart]=useState([]);
   const navigate=useNavigate();
 
-  const dataSend=()=>{
-    navigate("")
+  const loadData=()=>{
+    let api="http://localhost:3000/Doctors";
+    axios.get(api).then((res)=>{
+      setCart(res.data)
+    })
+  }
+  const dataSend=(key)=>{
+    navigate("/doctorprofile",{state:key})
   }
   return(
     <>

@@ -14,5 +14,31 @@
       "age": "21",
       "adhar": "988465426888"
     }
+  ],
+  "Doctors":[
+    {
+      "image":"doctor1.jpg",
+      "name":"Dr. Gourav Patel",
+      "des":"Cardiothoracic and Vascular Surgery Services",
+      "course":"MBBS, MS, MCh"
+    },
+    {
+      "image":"doctor2.jpg",
+      "name":"Dr. Arun S.",
+      "des":"Director, Urology Services",
+      "course":"MBBS, MS, DNB GENITO-URINARY SURGERY"
+    },
+    {
+      "image":"doctor3.jpg",
+      "name":"Dr. Ritu Baghel",
+      "des":"Director, Pathology & Blood Bank Services",
+      "course":"MBBS, MD"
+    },
+    {
+      "image":"doctor4.jpg",
+      "name":"Dr. Varsha Gupta",
+      "des":"Senior Consultant, Dental Services",
+      "course":"BDS, MDS, PGDHM"
+    }
   ]
 }
