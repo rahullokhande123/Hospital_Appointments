@@ -8,7 +8,15 @@ import img5 from "../../public/doctor4.jpg";
 
 import Card from 'react-bootstrap/Card';
 
+import { Navigate, useNavigate } from 'react-router-dom';
+
 const Home=()=>{
+
+  const navigate=useNavigate();
+
+  const dataSend=()=>{
+    navigate("")
+  }
   return(
     <>
 
@@ -57,7 +65,7 @@ const Home=()=>{
         <Card.Text>
         Senior Consultant, Dental Services <br /> <b> BDS, MDS, PGDHM</b> 
         </Card.Text>
-        <Button variant="primary" >View Profile</Button>
+        <Button variant="primary" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
     </Card>
 
