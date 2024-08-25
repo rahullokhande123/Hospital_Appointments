@@ -9,8 +9,12 @@ import img5 from "../../public/doctor4.jpg";
 import Card from 'react-bootstrap/Card';
 
 import { Navigate, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
 
 const Home=()=>{
 
@@ -23,9 +27,40 @@ const Home=()=>{
       setCart(res.data)
     })
   }
+
+  useEffect(()=>{
+    loadData();
+  },[])
+
   const dataSend=(key)=>{
     navigate("/doctorprofile",{state:key})
   }
+
+  const ans=cart.map((key)=>{
+    return(
+      <>
+      
+      <Card style={{ width: '15rem',marginRight:"50px" }}>
+      {/* <Card.Img variant="top" style={{width:"240px",height:"250px"}} />
+      {key.image} */}
+
+      <Card.Img variant="top" onClick={()=>{dataSendCart(key)}}  src={key.images} 
+      style={{width:"100%",height:"300px"}} />
+      <Card.Body>
+        <Card.Title>{key.name}</Card.Title>
+        <Card.Text>
+        {key.des} 
+        </Card.Text>
+        <Card.Text>
+        {key.course} 
+        </Card.Text>
+        <Button variant="primary">View Profile</Button>
+      </Card.Body>
+    </Card>
+
+      </>
+    )
+  })
   return(
     <>
 
@@ -34,7 +69,7 @@ const Home=()=>{
 <h1 style={{marginTop:"10px",marginLeft:"650px"}}>Specialist Doctors</h1>
 
 <Container style={{marginTop:"50px",display:"flex",marginLeft:"200px"}}>    
-<Card style={{ width: '15rem',marginRight:"50px" }}>
+{/* <Card style={{ width: '15rem',marginRight:"50px" }}>
       <Card.Img variant="top" src={img2} style={{width:"240px",height:"250px"}} />
       <Card.Body>
         <Card.Title>Dr. Gourav Patel</Card.Title>
@@ -76,7 +111,9 @@ const Home=()=>{
         </Card.Text>
         <Button variant="primary" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
-    </Card>
+    </Card> */}
+
+    {ans}
 
     </Container> 
     </>

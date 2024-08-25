@@ -17,7 +17,7 @@
   ],
   "Doctors":[
     {
-      "image":"doctor1.jpg",
+      "image":"/public/doctor1.jpg",
       "name":"Dr. Gourav Patel",
       "des":"Cardiothoracic and Vascular Surgery Services",
       "course":"MBBS, MS, MCh"
