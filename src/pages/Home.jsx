@@ -42,7 +42,7 @@ const Home=()=>{
       
       <Card style={{ width: '15rem',marginRight:"50px" }}>
       
-      <Card.Img variant="top" onClick={()=>{dataSendCart(key)}}  src={key.image} 
+      <Card.Img variant="top" onClick={()=>{dataSend(key)}}  src={key.image} 
       style={{width:"100%",height:"300px"}} />
       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
@@ -52,7 +52,7 @@ const Home=()=>{
         <Card.Text>
         {key.course} 
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dataSendCart(key)}} >View Profile</Button>
+        <Button variant="primary" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
     </Card>
 
