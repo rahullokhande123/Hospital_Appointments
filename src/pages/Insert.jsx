@@ -9,6 +9,22 @@ import { toast } from 'react-toastify';
 
 import { useNavigate } from 'react-router-dom';
 
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
+const location=useLocation();
+const [myDoc,setMydoc]=useState({
+  id:"",
+  name:""
+})
+useEffect(()=>{
+  setMydoc({
+      id:location.state.id,
+      name:location.state.name
+
+  })
+},[])
+
 
 const Insert=()=>{
 
@@ -39,7 +55,7 @@ const Insert=()=>{
     <Button style={{marginLeft:"700px",marginTop:"10px"}} variant="outline-dark"  onClick={()=>{navigate("/home")}} >Home</Button>
     <Container>
 
-    <h1 style={{marginLeft:"25px",marginBottom:"50px"}}>Insert Student Records</h1>
+    <h1 style={{marginLeft:"25px",marginBottom:"50px"}}>Insert Patients Details</h1>
 
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -62,7 +78,12 @@ const Insert=()=>{
         <Form.Control type="text" name='adhar' value={input.adhar} onChange={handlechange} />
       </Form.Group>
 
-      <Button variant="dark" type="submit" onClick={handleSubmit}>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Docter Refrense</Form.Label>
+        <Form.Control type="text" name='' value={input.myDoc.name} onChange={handlechange} />
+      </Form.Group>
+
+      <Button variant="success" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Form>
