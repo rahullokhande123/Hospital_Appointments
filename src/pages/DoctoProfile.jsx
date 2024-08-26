@@ -10,7 +10,8 @@ const DoctorProfile=()=>{
         image:"",
         name:"",
         des:"",
-        course:""
+        course:"",
+        about:""
     })
     useEffect(()=>{
         setMydoc({
@@ -18,22 +19,32 @@ const DoctorProfile=()=>{
             image:location.state.image,
             name:location.state.name,
             des:location.state.des,
-            course:location.state.course
+            course:location.state.course,
+            about:location.state.about
+
         })
     },[])
 
     return(
         <>
-            <h1></h1>
+            <div style={{display:"flex"}}>
             <div>
                 <img src={myDoc.image} style={{width:"350px",height:"400px",margin:"60px",border:"2px solid white",boxShadow:"8px 12px 12px 0px"}} />
-                <h2 style={{marginLeft:"8%"}}>{myDoc.name}</h2>
-                <h5 style={{marginLeft:"2%"}} >{myDoc.des}</h5>
-                <b style={{marginLeft:"11%"}} >{myDoc.course}</b>
+                <h2 style={{marginLeft:"25%"}}>{myDoc.name}</h2>
+                <h5 style={{marginLeft:"10%"}} >{myDoc.des}</h5>
+                <b style={{marginLeft:"20%"}} >{myDoc.course}</b>
 
             </div>
+            <div>
+                <h1>{myDoc.name}</h1>
+                <br />
+                <b>{myDoc.about}</b>
+            </div>
+
+            </div>
+            
             <br />
-            <div style={{marginLeft:"8%"}} >
+            <div style={{marginLeft:"10%"}} >
                 <Button variant="dark">Book Appitment</Button>
             </div>
             

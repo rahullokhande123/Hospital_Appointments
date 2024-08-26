@@ -20,25 +20,29 @@
       "image":"/public/doctor1.jpg",
       "name":"Dr. Gourav Patel",
       "des":"Cardiothoracic and Vascular Surgery Services",
-      "course":"MBBS, MS, MCh"
+      "course":"MBBS, MS, MCh",
+      "about":"Dr. Ritu Singhal, a distinguished oncopathologist with 23 years of expertise in pathology, is renowned as one of the most experienced oncopathologists in Bhopal. A recipient of the prestigious IAC Fellowship, Dr. Singhal is a specialist in Cytology (FNAC) and excels in Bone Marrow Aspiration & Diagnosis. As a pioneering figure, Dr. Singhal holds the distinction of being the first pathologist to introduce Immunohistochemistry in Bhopal, further solidifying her role as the sole oncopathologist conducting these vital procedures in the region. With an impressive portfolio, Dr. Singhal has successfully performed over 50,000 Histopathology cases, showcasing her extensive hands-on experience. Her proficiency extends to imprint cytology and sentinel lymph node biopsy, demonstrating a comprehensive skill set in diagnostic and therapeutic pathology."
     },
     {
       "image":"/public/doctor2.jpg",
       "name":"Dr. Arun Sharma",
       "des":"Director, Urology Services",
-      "course":"MBBS, MS, DNB GENITO-URINARY SURGERY"
+      "course":"MBBS, MS, DNB GENITO-URINARY SURGERY",
+      "about":"Dr. Ritu Singhal, a distinguished oncopathologist with 23 years of expertise in pathology, is renowned as one of the most experienced oncopathologists in Bhopal. A recipient of the prestigious IAC Fellowship, Dr. Singhal is a specialist in Cytology (FNAC) and excels in Bone Marrow Aspiration & Diagnosis. As a pioneering figure, Dr. Singhal holds the distinction of being the first pathologist to introduce Immunohistochemistry in Bhopal, further solidifying her role as the sole oncopathologist conducting these vital procedures in the region. With an impressive portfolio, Dr. Singhal has successfully performed over 50,000 Histopathology cases, showcasing her extensive hands-on experience. Her proficiency extends to imprint cytology and sentinel lymph node biopsy, demonstrating a comprehensive skill set in diagnostic and therapeutic pathology."
     },
     {
       "image":"/public/doctor3.jpg",
       "name":"Dr. Ritu Baghel",
       "des":"Director, Pathology & Blood Bank Services",
-      "course":"MBBS, MD"
+      "course":"MBBS, MD",
+      "about":"Dr. Ritu Singhal, a distinguished oncopathologist with 23 years of expertise in pathology, is renowned as one of the most experienced oncopathologists in Bhopal. A recipient of the prestigious IAC Fellowship, Dr. Singhal is a specialist in Cytology (FNAC) and excels in Bone Marrow Aspiration & Diagnosis. As a pioneering figure, Dr. Singhal holds the distinction of being the first pathologist to introduce Immunohistochemistry in Bhopal, further solidifying her role as the sole oncopathologist conducting these vital procedures in the region. With an impressive portfolio, Dr. Singhal has successfully performed over 50,000 Histopathology cases, showcasing her extensive hands-on experience. Her proficiency extends to imprint cytology and sentinel lymph node biopsy, demonstrating a comprehensive skill set in diagnostic and therapeutic pathology."
     },
     {
       "image":"/public/doctor4.jpg",
       "name":"Dr. Varsha Gupta",
       "des":"Senior Consultant, Dental Services",
-      "course":"BDS, MDS, PGDHM"
+      "course":"BDS, MDS, PGDHM",
+      "about":"Dr. Ritu Singhal, a distinguished oncopathologist with 23 years of expertise in pathology, is renowned as one of the most experienced oncopathologists in Bhopal. A recipient of the prestigious IAC Fellowship, Dr. Singhal is a specialist in Cytology (FNAC) and excels in Bone Marrow Aspiration & Diagnosis. As a pioneering figure, Dr. Singhal holds the distinction of being the first pathologist to introduce Immunohistochemistry in Bhopal, further solidifying her role as the sole oncopathologist conducting these vital procedures in the region. With an impressive portfolio, Dr. Singhal has successfully performed over 50,000 Histopathology cases, showcasing her extensive hands-on experience. Her proficiency extends to imprint cytology and sentinel lymph node biopsy, demonstrating a comprehensive skill set in diagnostic and therapeutic pathology."
     }
   ]
 }
