@@ -31,6 +31,7 @@ const Display=()=>{
                <td>{Key.city}</td>
                <td>{Key.age}</td>
                <td>{Key.adhar}</td>
+               <td>{Key.doctor}</td>
          </tr>
       </>
     )
@@ -44,7 +45,7 @@ const Display=()=>{
           
       <Button style={{marginLeft:"1050px",marginTop:"10px"}} variant="outline-dark"  onClick={()=>{navigate("/home")}} >Home</Button>
 
-        <h1 style={{marginLeft:"400px",marginBottom:"50px"}}>Cybrom Student Data</h1>
+        <h1 style={{marginLeft:"400px",marginBottom:"50px"}}>Patients Details</h1>
         <Table striped bordered hover>
         <thead>
         <tr>
@@ -52,6 +53,7 @@ const Display=()=>{
           <th>City</th>
           <th>Age</th>
           <th>Aadhar No.</th>
+          <th>Doctor Refrence</th>
         </tr>
         {ans}
       </thead>

@@ -9,22 +9,6 @@ import { toast } from 'react-toastify';
 
 import { useNavigate } from 'react-router-dom';
 
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-
-const location=useLocation();
-const [myDoc,setMydoc]=useState({
-  id:"",
-  name:""
-})
-useEffect(()=>{
-  setMydoc({
-      id:location.state.id,
-      name:location.state.name
-
-  })
-},[])
-
 
 const Insert=()=>{
 
@@ -80,7 +64,7 @@ const Insert=()=>{
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Docter Refrense</Form.Label>
-        <Form.Control type="text" name='' value={input.myDoc.name} onChange={handlechange} />
+        <Form.Control type="text" name='doctor' value={input.doctor} onChange={handlechange} />
       </Form.Group>
 
       <Button variant="success" type="submit" onClick={handleSubmit}>
