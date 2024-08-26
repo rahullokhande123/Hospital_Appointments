@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
 
 const DoctorProfile=()=>{
 
+    const navigate=useNavigate();
     const location=useLocation();
     const [myDoc,setMydoc]=useState({
         id:"",
@@ -40,7 +42,7 @@ const DoctorProfile=()=>{
                 <br />
                 <b style={{marginTop:"20px"}}>{myDoc.about}</b>
                 <div style={{marginLeft:"3%",marginTop:"3%"}} >
-                     <Button variant="success">Book Appitment</Button>
+                     <Button variant="success" onClick={()=>{navigate("/insert")}} >Book Appitment</Button>
                 </div>
             </div>
 
