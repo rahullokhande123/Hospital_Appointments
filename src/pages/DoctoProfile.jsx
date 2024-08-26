@@ -36,17 +36,16 @@ const DoctorProfile=()=>{
 
             </div>
             <div>
-                <h1>{myDoc.name}</h1>
+                <h1 style={{marginTop:"6%"}}>{myDoc.name}</h1>
                 <br />
-                <b>{myDoc.about}</b>
+                <b style={{marginTop:"20px"}}>{myDoc.about}</b>
+                <div style={{marginLeft:"3%",marginTop:"3%"}} >
+                     <Button variant="success">Book Appitment</Button>
+                </div>
             </div>
 
             </div>
             
-            <br />
-            <div style={{marginLeft:"10%"}} >
-                <Button variant="dark">Book Appitment</Button>
-            </div>
             
            
         </>
