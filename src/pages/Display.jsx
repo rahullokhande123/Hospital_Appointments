@@ -49,7 +49,7 @@ const Display=()=>{
         <Table striped bordered hover>
         <thead>
         <tr>
-          <th>Name</th>
+          <th>Patients Name</th>
           <th>City</th>
           <th>Age</th>
           <th>Aadhar No.</th>

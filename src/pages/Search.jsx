@@ -16,16 +16,11 @@ const Search=()=>{
     holdNavigate("/display")
   }
 
-  const back=()=>{
-    holdNavigate(-1)
-  }
-  
-
-  const [rno,setrno]=useState("")
+  const [Doc,setDoc]=useState("")
   const [mydata,setmydata]=useState([])
 
   const handlesearch=()=>{
-    let url=`http://localhost:3000/Student/?rollno=${doctor}`
+    let url=`http://localhost:3000/Patients/?doctor=${Doc}`
     axios.get(url).then((res)=>{
       setmydata(res.data)
     })
@@ -37,35 +32,13 @@ const Search=()=>{
     return(
       <>
       <tr>
-        <th>
-          Name
-          <hr />
+        
         <td>{Key.name}</td>
-        </th>
-
-        <th>
-          City
-          <hr />
-          <td>{Key.city}</td>
-        </th>
-        <th>
-          Age
-          <hr />
+        <td>{Key.city}</td>
         <td>{Key.age}</td>
-        </th>
-        
-        <th>
-          Aadhar No.
-          <hr />
         <td>{Key.adhar}</td>
-        </th>
-
-        <th>
-          Doctor
-          <hr />
         <td>{Key.doctor}</td>
-        </th>
-        
+      
       </tr>
       </>
     )
@@ -77,12 +50,20 @@ const Search=()=>{
     <section style={{display:"block"}}>
     <div style={{display:"block"}}>
 
-     <b style={{marginLeft:"350px",fontSize:"20px"}}>Search With Roll No.</b>
-     <input style={{marginLeft:"10px"}} type="text" value={rno} onChange={(e)=>{setrno(e.target.value)}} />
+     <b style={{marginLeft:"350px",fontSize:"20px"}}>Search</b>
+     <input style={{marginLeft:"10px"}} type="text" value={Doc} onChange={(e)=>{setDoc(e.target.value)}} />
      <button onClick={handlesearch} style={{marginLeft:"10px",borderRadius:"10px",backgroundColor:"gray",color:"white",marginBottom:"20px"}}>Search</button>
      </div> 
      <div style={{marginLeft:"250px",width:"50%"}}> 
      <Table striped bordered hover >
+
+      <tr>
+           <th>Patients Name</th>
+           <th>City</th>
+           <th>Age</th>
+           <th>Aadhar No.</th>
+           <th>Doctor</th>
+      </tr>
     
       <tbody>
         {ans}
