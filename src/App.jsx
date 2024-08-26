@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Insert from "./pages/Insert";
 import Display from "./pages/Display";
 import DoctorProfile from "./pages/DoctoProfile";
+import Search from "./pages/Search";
 
 
 
@@ -18,6 +19,7 @@ const App=()=>{
                              <Route path="insert" element={<Insert/>}/>
                              <Route path="display" element={<Display/>}/>
                              <Route path="doctorprofile" element={<DoctorProfile/>}/>
+                             <Route path="search" element={<Search/>}/>
 
                       
                       </Route>
