@@ -52,7 +52,7 @@ const Home=()=>{
         <Card.Text>
         {key.course} 
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dataSend(key)}} >View Profile</Button>
+        <Button variant="success" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
     </Card>
 
