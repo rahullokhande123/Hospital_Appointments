@@ -33,10 +33,12 @@ const Topbar=()=>{
             <Nav.Link as={Link} to="display" style={{marginRight:"20px"}}>Patients Details</Nav.Link>
             <Nav.Link as={Link} to="search" style={{marginRight:"20px"}}>Search</Nav.Link>
             <NavDropdown title="Appointments" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Dr.Gourav Patel</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Dr.Abhishek Sharma
+              <NavDropdown.Item as={Link} to="doctor_gourav">Dr. Gourav Patel</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="doctor_Arun">
+                  Dr. Arun Sharma
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="doctor_ritu">Dr. Ritu Baghel</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="doctor_varsha">Dr. Varsha Gupta</NavDropdown.Item>
               
             </NavDropdown>
             
