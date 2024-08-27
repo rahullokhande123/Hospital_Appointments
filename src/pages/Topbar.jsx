@@ -15,7 +15,7 @@ const Topbar=()=>{
   return(
     <>
     {/* ============================== Navbar Section ========================== */}
-
+    <div style={{position:"sticky",top:0,zIndex:"3"}}>
     <Navbar expand="lg"   className="bg-body-tertiary">
       <Container fluid>
 
@@ -55,6 +55,7 @@ const Topbar=()=>{
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
     </>
   )
 }

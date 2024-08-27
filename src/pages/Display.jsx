@@ -31,6 +31,7 @@ const Display=()=>{
                <td>{Key.city}</td>
                <td>{Key.age}</td>
                <td>{Key.adhar}</td>
+               <td>{Key.contact}</td>
                <td>{Key.doctor}</td>
          </tr>
       </>
@@ -53,6 +54,7 @@ const Display=()=>{
           <th>City</th>
           <th>Age</th>
           <th>Aadhar No.</th>
+          <th>Contact No.</th>
           <th>Doctor Refrence</th>
         </tr>
         {ans}

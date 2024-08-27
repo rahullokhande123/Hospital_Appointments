@@ -33,10 +33,10 @@ const Insert=()=>{
     <>
 
     <section id='insertSection' style={{width:"90%",height:"825px"}}>
-    <div style={{width:"500px",marginLeft:"500px",marginTop:"60px",marginRight:"60px"}}>
+    <div style={{width:"500px",marginLeft:"500px",marginTop:"20px",marginRight:"60px"}}>
 
 
-    <Button style={{marginLeft:"700px",marginTop:"10px"}} variant="outline-dark"  onClick={()=>{navigate("/home")}} >Home</Button>
+    <Button style={{marginLeft:"700px"}} variant="outline-dark"  onClick={()=>{navigate("/home")}} >Home</Button>
     <Container>
 
     <h1 style={{marginLeft:"25px",marginBottom:"50px"}}>Insert Patients Details</h1>
@@ -54,12 +54,17 @@ const Insert=()=>{
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Age</Form.Label>
-        <Form.Control type="text" name='age' value={input.age} onChange={handlechange}  />
+        <Form.Control type="number" name='age' value={input.age} onChange={handlechange}  />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Contact No.</Form.Label>
+        <Form.Control type="number" name='contact' value={input.contact} onChange={handlechange}  />
       </Form.Group>
     
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Aadhar No.</Form.Label>
-        <Form.Control type="text" name='adhar' value={input.adhar} onChange={handlechange} />
+        <Form.Control type="number" name='adhar' value={input.adhar} onChange={handlechange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">

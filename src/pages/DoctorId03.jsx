@@ -25,6 +25,7 @@ const DoctorRituBaghel=()=>{
                     <td>{key.name}</td>
                     <td>{key.city}</td>
                     <td>{key.age}</td>
+                    <td>{key.contact}</td>
                     <td>{key.adhar}</td>
                    
                 </tr>
@@ -40,6 +41,7 @@ const DoctorRituBaghel=()=>{
                     <th>Patient Name</th>
                     <th>City</th>
                     <th>Age</th>
+                    <th>Contact No.</th>
                     <th>Aadhar No.</th>
 
                   </tr>
