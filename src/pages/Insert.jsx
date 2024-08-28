@@ -77,6 +77,7 @@ const Insert=()=>{
       </Button>
     </Form>
     </Container>
+    
     </div>
     </section>
     </>
