@@ -29,6 +29,7 @@ const DoctorProfile=()=>{
 
     return(
         <>
+        
             <div style={{display:"flex"}}>
             <div>
                 <img src={myDoc.image} style={{width:"350px",height:"400px",margin:"60px",border:"2px solid white",boxShadow:"8px 12px 12px 0px"}} />
