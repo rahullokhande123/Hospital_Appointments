@@ -55,7 +55,6 @@ const Home=()=>{
         <Button variant="success" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
     </Card>
-
       </>
     )
   })
@@ -65,6 +64,7 @@ const Home=()=>{
 
 <h1 style={{marginTop:"10px",marginLeft:"650px"}}>Specialist Doctors</h1>
 
+{/* ==================== Images Come in json ===================== */}
 <Container style={{marginTop:"50px",display:"flex",marginLeft:"200px"}}>
 
     {ans}
