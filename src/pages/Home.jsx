@@ -55,6 +55,8 @@ const Home=()=>{
         <Button variant="success" onClick={()=>{dataSend(key)}} >View Profile</Button>
       </Card.Body>
     </Card>
+
+    {/* ================================= */}
       </>
     )
   })
