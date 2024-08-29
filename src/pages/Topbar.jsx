@@ -29,10 +29,10 @@ const Topbar=()=>{
   }
   useEffect(()=>{
     handlesearch();
-  })
-  const naviSearch=()=>{
+  },[])
+  const naviSearch=(Doc)=>{
     console.log("Value Aa Rahi Hai")
-    // navigate("/search",{state:key})
+    navigate("/displaySearch",{state:Doc})
   }
 
   
@@ -92,7 +92,8 @@ const Topbar=()=>{
               value={Doc} onChange={(e)=>{setDoc(e.target.value)}}
               
             />
-            <Button variant="outline-success" onClick={naviSearch} >Search</Button>
+            <Button variant="outline-success" onClick={()=>{naviSearch(Doc)}} >Search</Button>
+            
   {/* ================================================================= */}
         {/* <div>
           {ans}

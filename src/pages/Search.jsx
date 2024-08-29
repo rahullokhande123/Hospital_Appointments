@@ -7,6 +7,7 @@ import React from 'react';
 import { Button, message } from 'antd';
 
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const Search=()=>{
@@ -18,6 +19,7 @@ const Search=()=>{
 
   const [Doc,setDoc]=useState("")
   const [mydata,setmydata]=useState([])
+  const [Pdata,setPdata]=useState([]);
 
   const handlesearch=()=>{
     let url=`http://localhost:3000/Patients/?doctor=${Doc}`
@@ -25,6 +27,17 @@ const Search=()=>{
       setmydata(res.data)
     })
   }
+
+  const loadPdata=()=>{
+    let api="http://localhost:3000/Patients";
+    axios.get(api).then((res)=>{
+      setPdata(res.data)
+    })
+  }
+  useEffect(()=>{
+    loadPdata();
+  },[]);
+
 
   let ans;
   if(mydata.length>0){
@@ -43,6 +56,22 @@ const Search=()=>{
       </>
     )
   })}
+  else{
+    ans=ans=Pdata.map((Key)=>{
+      return(
+        <>
+           <tr>
+                 <td>{Key.name}</td>
+                 <td>{Key.city}</td>
+                 <td>{Key.age}</td>
+                 <td>{Key.adhar}</td>
+                 <td>{Key.contact}</td>
+                 <td>{Key.doctor}</td>
+           </tr>
+        </>
+      )
+    })
+  }
  
 
   return(
@@ -62,6 +91,7 @@ const Search=()=>{
            <th>City</th>
            <th>Age</th>
            <th>Aadhar No.</th>
+           <th>Contact No.</th>
            <th>Doctor</th>
       </tr>
     
@@ -72,8 +102,8 @@ const Search=()=>{
       </div>
       </section>
 
-
     </>
   )
 }
 export default Search;
+
