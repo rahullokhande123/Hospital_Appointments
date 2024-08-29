@@ -27,7 +27,13 @@ const Topbar=()=>{
          setmydata(res.data)
     })
   }
-  
+  useEffect(()=>{
+    handlesearch();
+  })
+  const naviSearch=()=>{
+    console.log("Value Aa Rahi Hai")
+    // navigate("/search",{state:key})
+  }
 
   
   const ans=mydata.map((key)=>{
@@ -86,7 +92,7 @@ const Topbar=()=>{
               value={Doc} onChange={(e)=>{setDoc(e.target.value)}}
               
             />
-            <Button variant="outline-success" onClick={handlesearch} >Search</Button>
+            <Button variant="outline-success" onClick={naviSearch} >Search</Button>
   {/* ================================================================= */}
         {/* <div>
           {ans}
