@@ -40,8 +40,7 @@ const Display=()=>{
 
   return(
     <>
-      <Container>
-          
+      <Container>  
       <Button style={{marginLeft:"1050px",marginTop:"10px"}} variant="outline-dark"  onClick={()=>{navigate("/home")}} >Home</Button>
 
         <h1 style={{marginLeft:"400px",marginBottom:"50px"}}>Patients Details</h1>
@@ -58,7 +57,6 @@ const Display=()=>{
         {ans}
       </thead>
         </Table>
-
       </Container>
     </>
   )

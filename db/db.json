@@ -54,6 +54,7 @@
   "Doctors": [
     {
       "image": "https://www.kauveryhospital.com/wp-content/uploads/2023/04/Dr-Raghuram-Cardio-thoracic-surgery2019-02-18-12_58_54pm.jpg",
+      "image": "./public/doctor1.jpg",
       "name": "Dr. Gourav Patel",
       "des": "Cardiothoracic and Vascular Surgery Services",
       "course": "MBBS, MS, MCh",
@@ -61,13 +62,12 @@
     },
     {
       "image": "https://content.jdmagicbox.com/v2/comp/dibrugarh/z6/9999px373.x373.240605162400.a8z6/catalogue/qtualzjskmhfvtn-svoxh888vq-250.jpg",
-      "name": "Dr. Arun Sharma",
       "des": "Director, Urology Services",
-      "course": "MBBS, MS, DNB GENITO-URINARY SURGERY",
       "about": "Dr. Arun Sharma is a distinguished urologist with a rich background in the field. With over 15,000 major and minor urological operations, Dr. Joshi's expertise is unparalleled. He was groomed in Urology at the Department of Urology, Bombay Hospital, Mumbai, from 1985 to 1989, by renowned mentors like Dr. Ajit Phadke, Dr. D. K. Karanjawala, and Dr. D. D. Gaur. He has further honed his skills over the last three and a half decades and has mentored several younger urologists now. As a designated Professor of Surgery certified by the Board of Governors of the Medical Council of India, Dr. Joshi showcases proficiency in various areas. His professional skills encompass endoscopic prostatic surgery (TURIS, TURP, and LASER Prostatectomy), endoscopic stone surgeries (PCNL/Mini Perc, Ureteroscopy - Rigid and Flexible, using HOLMIUM and Thulium LASERS), and Extracorporeal Shock Wave Lithotripsy."
     },
     {
       "image": "https://i.pinimg.com/564x/e5/94/30/e594309cdbbb3d3579d09ab24af4674f.jpg",
+      "image": "./public/doctor3.jpg",
       "name": "Dr. Ritu Baghel",
       "des": "Director, Pathology & Blood Bank Services",
       "course": "MBBS, MD",
@@ -75,6 +75,7 @@
     },
     {
       "image": "https://i.pinimg.com/564x/90/e4/46/90e446b04b5eaec0bddd284012ef3698.jpg",
+      "image": "./public/doctor4.jpg",
       "name": "Dr. Varsha Gupta",
       "des": "Senior Consultant, Dental Services",
       "course": "BDS, MDS, PGDHM",
