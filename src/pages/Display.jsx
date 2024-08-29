@@ -38,8 +38,6 @@ const Display=()=>{
     )
   })
 
-
-
   return(
     <>
       <Container>
