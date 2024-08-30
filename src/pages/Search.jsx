@@ -72,8 +72,6 @@ const Search=()=>{
       )
     })
   }
- 
-
   return(
     <>
     <section style={{display:"block"}}>

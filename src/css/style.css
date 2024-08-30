@@ -130,3 +130,12 @@ h1
 #homeCart2{
     display:block;
 }
+#docProfileButton{
+    border: 2px solid gray;
+    width: 40px;
+    height: 40px;
+    background-color:gray;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}

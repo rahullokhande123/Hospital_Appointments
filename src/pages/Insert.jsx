@@ -2,15 +2,30 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Container } from 'react-bootstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { message } from 'antd';
 import { toast } from 'react-toastify';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 const Insert=()=>{
+  let [c,setC] = useState([]);
+  let [f,setF] = useState([]);
+
+  let {docdata} = useParams();
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/Doctors').then((res) => {
+      setC(res.data);
+      const filtered = res.data.find(e => e.id === docdata);
+      setF(filtered || {}); // Handle case where no match is found
+    });
+  }, [docdata]);
+
+  console.log(f)
+
 
   const navigate=useNavigate();
   const [input,setInput]=useState({});
@@ -63,13 +78,18 @@ const Insert=()=>{
       </Form.Group>
     
       <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Date And Time </Form.Label>
+        <Form.Control type="datetime-local" name='doctor' value={input.time} onChange={handlechange} />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Aadhar No.</Form.Label>
         <Form.Control type="number" name='adhar' value={input.adhar} onChange={handlechange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Docter Refrense</Form.Label>
-        <Form.Control type="text" name='doctor' value={input.doctor} onChange={handlechange} />
+        <Form.Control type="text" name='doctor' readOnly value={f.name} onChange={handlechange} />
       </Form.Group>
 
       <Button variant="success" type="submit" onClick={handleSubmit}>

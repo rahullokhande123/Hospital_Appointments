@@ -7,57 +7,17 @@
       "age": 24,
       "adhar": 123456789,
       "contact": 9685608424,
-      "doctor": "Dr. Ritu Baghel"
+      "doctor": "Dr. Ritu Baghel",
+      "date-time": "2024-09-02T15:00"
     },
     {
-      "id": "c9cf",
-      "name": "Himanshee",
-      "city": "Betul",
-      "age": "21",
-      "adhar": "988465426888",
-      "doctor": "Dr. Varsha Gupta"
-    },
-    {
-      "id": "5589",
-      "name": "Ram",
-      "city": "Bhopal",
-      "age": "21",
-      "adhar": "988465426888",
-      "doctor": "Dr. Arun Sharma"
-    },
-    {
-      "id": "8574",
+      "id": "bcf6",
       "name": "Swati",
-      "city": "America",
-      "age": "20",
-      "adhar": "123654789",
-      "doctor": "Dr. Varsha Gupta"
-    },
-    {
-      "id": "ef9f",
-      "name": "Saurav Pastor",
-      "city": "Tikamgarh",
-      "age": "18",
-      "adhar": "489849818",
-      "doctor": "Dr. Gourav Patel"
-    },
-    {
-      "id": "7b18",
-      "name": "Himanshee Gupta",
-      "city": "Betul",
-      "age": "20",
-      "contact": "1236548975",
-      "adhar": "988465426888",
-      "doctor": "Dr. Ritu Baghel"
-    },
-    {
-      "id": "9063",
-      "name": "Mahi ",
       "city": "Bhopal",
-      "age": "24",
-      "contact": "8356897698",
-      "adhar": "988465426888",
-      "doctor": "Dr. Ritu Baghel"
+      "age": "22",
+      "contact": "8356967812",
+      "doctor": "2024-09-04T13:37",
+      "adhar": "456987125269"
     }
   ],
   "Doctors": [

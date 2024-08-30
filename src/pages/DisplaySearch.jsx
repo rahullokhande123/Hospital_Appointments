@@ -34,7 +34,7 @@ const DisplaySearch=()=>{
     
     <>
     
-        <h1>{name}</h1>
+        <h1>{Pdata.name}</h1>
     </>
   )
 }

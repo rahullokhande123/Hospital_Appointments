@@ -20,14 +20,17 @@ const App=()=>{
                              <Route index element={<Home/>}/>
                              <Route path="home" element={<Home/>}/>
                              <Route path="insert" element={<Insert/>}/>
+                             
                              <Route path="display" element={<Display/>}/>
                              <Route path="doctorprofile" element={<DoctorProfile/>}/>
+                             <Route path="insert/:docdata" element={<Insert/>}/>
                              <Route path="search" element={<Search/>}/>
                              <Route path="doctor_gourav" element={<DoctorGouravPatel/>}/>
                              <Route path="doctor_Arun" element={<DoctorArunSharma/>}/>
                              <Route path="doctor_ritu" element={<DoctorRituBaghel/>}/>
                              <Route path="doctor_varsha" element={<DoctorVarshaGupta/>}/>
                              <Route path="displaySearch" element={<DisplaySearch/>}/>
+                      
 
                       </Route>
                </Routes>
