@@ -25,6 +25,7 @@ const App=()=>{
                              <Route path="doctorprofile" element={<DoctorProfile/>}/>
                              <Route path="insert/:docdata" element={<Insert/>}/>
                              <Route path="search" element={<Search/>}/>
+                             <Route path="displaySearch/:searchData" element={<DisplaySearch/>}/>
                              <Route path="doctor_gourav" element={<DoctorGouravPatel/>}/>
                              <Route path="doctor_Arun" element={<DoctorArunSharma/>}/>
                              <Route path="doctor_ritu" element={<DoctorRituBaghel/>}/>
