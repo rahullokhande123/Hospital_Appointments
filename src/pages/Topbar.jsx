@@ -106,15 +106,7 @@ const Topbar=()=>{
              <button onClick={handlesearch} style={{marginLeft:"10px",borderRadius:"10px",backgroundColor:"gray",color:"white",marginBottom:"20px"}}>Search</button>
         </div> 
         <div style={{marginLeft:"350px",width:"50%"}}> 
-        <Table striped bordered hover >
-
-           <tr>
-              <th>Patients Name</th>
-              <th>City</th>
-              <th>Age</th>
-              <th>Aadhar No.</th>
-              <th>Doctor</th>
-          </tr>
+        <Table striped bordered hove
     
          <tbody>
              {ans}
