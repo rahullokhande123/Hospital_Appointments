@@ -68,7 +68,7 @@ const Topbar=()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            {/* <Nav.Link as={Link} to="insert" style={{marginRight:"20px"}}>Enter Patient Details</Nav.Link> */}
+            
             <Nav.Link as={Link} to="display" style={{marginRight:"20px"}}>Patients Details</Nav.Link>
             <Nav.Link as={Link} to="search" style={{marginRight:"20px"}}>Search</Nav.Link>
             <NavDropdown title="Appointments" id="navbarScrollingDropdown">
@@ -95,8 +95,6 @@ const Topbar=()=>{
             <Button variant="outline-success" onClick={()=>{naviSearch(Doc)}} >Search</Button>
             
   {/* ================================================================= */}
-        
-
           </Form>
         </Navbar.Collapse>
       </Container>
