@@ -95,9 +95,7 @@ const Topbar=()=>{
             <Button variant="outline-success" onClick={()=>{naviSearch(Doc)}} >Search</Button>
             
   {/* ================================================================= */}
-        {/* <div>
-          {ans}
-        </div> */}
+        
         {/* <section style={{display:"block"}}>
        
            </Table>
