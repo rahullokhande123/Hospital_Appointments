@@ -99,13 +99,6 @@ const Topbar=()=>{
           {ans}
         </div> */}
         {/* <section style={{display:"block"}}>
-        <div style={{display:"block"}}>
-
-             <b style={{marginLeft:"500px",fontSize:"20px"}}>Search</b>
-             <input style={{marginLeft:"10px",marginTop:"3%",width:"300px"}} type="text" value={Doc} onChange={(e)=>{setDoc(e.target.value)}} />
-             <button onClick={handlesearch} style={{marginLeft:"10px",borderRadius:"10px",backgroundColor:"gray",color:"white",marginBottom:"20px"}}>Search</button>
-       
-    
          <tbody>
              {ans}
          </tbody>
