@@ -64,7 +64,7 @@ const Home=()=>{
 
 <div id='hero'>
 
-<h1 style={{marginTop:"10px",marginLeft:"650px"}}>Specialist Doctors</h1>
+<h1 style={{marginLeft:"650px",color:'white',width:"330px"}}> Specialist Doctors</h1>
 
 <div>
 <Container style={{marginTop:"50px",display:"flex",marginLeft:"200px",paddingBottom:"6%"}}>
